@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header nav li.login a {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.login-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-link:hover {
+  background-color: #0056b3;
+}
+
+main {
+  margin-top: 100px;
+}
+
+main h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin-bottom: 40px;
+}
+
+.announcements, .features, .testimonial {
+  margin-bottom: 40px;
+}
+
+.announcements h3, .features h3, .testimonial h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.announcements ul, .features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.announcements li, .features li {
+  margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+}
+
+.logo-cefet{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  }
+
+/* parte css do login em login.html --------------------------*/
+.login-container {
+  margin-top: 15%;
+  margin-left: 40%;
+  margin-bottom: 13%;
+  width: 400px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #888888;
+}
+
+.form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  border: none;
+  background-color: #F5F5F5;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+button[type="submit"] , #submit {
+  background-color: #2196F3;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover #submit:hover{
+  background-color: #0D47A1;
+}
+
+/* parte do Remember me e Forgot password em login--------------*/
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: small;
+  color: #1396e2;
+  margin-top: 10px;
+
+}
+
+/*Remember me------*/
+
+.left{
+  display: flex;
+  color:#1396e2;
+}
+
+/*Forgot password------*/
+
+label a{
+  color:#137ee2;
+  text-decoration: none;
+}
+
+/* fim da parte css do login em login.html --------------------------*/
+
+/* parte css do teste em tests.html --------------------------*/
+.pergunta{
+  margin-top: 100px;
+  }
+.enviar-teste{      
+  margin-top: 50px; /*essa margin não está funcionando*/
+}
+/* fim da parte css do teste em tests.html --------------------------*/
+
+/* Media queries */
+@media (max-width: 767px) {
+  header {
+      padding: 10px;
+  }
+  
+  header h1 {
+      font-size: 24px;
+  }
+  
+  header nav li {
+      display: block;
+      margin: 10px 0;
+  }
+  
+  .login-link {
+      display: block;
+      margin-top: 10px;
+  }
+  
+  main h2 {
+      font-size: 24px;
+  }
+  
+  .announcements h3, .features h3, .testimonial h3 {
+      font-size: 20px;
+  }
+}
+
+/* <button type="submit">Login</button>*/
+
